@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
-const TOKEN = '8617784860:AAEhLMbs5v9Or1l4zUpYT016xPCPuNnTWaA';
+const TOKEN = process.env.BOT_TOKEN || '8617784860:AAEhLMbs5v9Or1l4zUpYT016xPCPuNnTWaA';
 const ADMIN_ID = 7852111017;
 const TGSTAT_TOKEN = '97bdcc340e3769bd70caea8f8dc6a0ef';
 
