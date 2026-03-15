@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const TOKEN = process.env.BOT_TOKEN || '8617784860:AAEhLMbs5v9Or1l4zUpYT016xPCPuNnTWaA';
 const ADMIN_ID = 7852111017;
-const TGSTAT_TOKEN = '97bdcc340e3769bd70caea8f8dc6a0ef';
+const TGSTAT_TOKEN = process.env.TGSTAT_TOKEN || '97bdcc340e3769bd70caea8f8dc6a0ef';
 
 const bot = new TelegramBot(TOKEN, { polling: true });
 console.log('🐝 TG Bee запущен (с TGStat API)...');
